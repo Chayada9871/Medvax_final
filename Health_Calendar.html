@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- flatpickr calendar -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+  <!-- Back button -->
+  <div class="back-button-container">
+    <a href="Health_Home.html">
+      <button class="back-button">
+        <img src="Back.png" alt="Back" />
+      </button>
+    </a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-container">
+    <div class="title">Reservation</div>
+
+    <!-- Search -->
+    <div class="search-container">
+      <input type="text" placeholder="Search" />
+    </div>
+
+    <!-- Calendar -->
+    <div class="calendar-wrapper">
+      <div id="calendar"></div>
+    </div>
+    
+
+    <!-- Filtered Reservations -->
+     <h2></h2>
+     <h2></h2>
+    <div id="reservation-cards"></div>
+  </div>
+
+  <!-- Bottom Navigation Bar -->
+  <div class="bottom-nav">
+    <a href="Health_Home.html">
+      <img src="h.png" alt="Home" />
+    </a>
+    <a href="Health_Calendar.html">
+      <img src="calendar.png" alt="Reservation" />
+    </a>
+    <a href="Health_Profile.html">
+      <img src="userprofile.png" alt="Profile" />
+    </a>
+  </div>
+
+  <!-- Script to handle dynamic filtering -->
+  <script>
+    const reservations = [
+      { name: "Ms. Anan Thamin", date: "2025-02-10" },
+      { name: "Ms. Bansri Krungthip", date: "2025-02-20" },
+      { name: "Ms. Bansri Krungthip", date: "2025-02-28" },
+      { name: "Ms. Bansri Krungthip", date: "2025-02-28" }
+    ];
+
+    function renderReservations(formattedDate) {
+      const filtered = reservations.filter(r => r.date === formattedDate);
+
+      const cards = filtered.map(res => `
+        <div class="reservation-card">
+          <div class="card-left">
+            <img src="reservation.png" alt="icon" />
+            <div class="card-info">
+              <span>Confirmed</span><br>
+              <span>${res.name}</span><br>
+              <span>${res.date}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      document.getElementById('reservation-cards').innerHTML = cards || "<p>No reservations for this date.</p>";
+    }
+
+    flatpickr("#calendar", {
+      inline: true,
+      dateFormat: "Y-m-d",
+      onChange: function(selectedDates, dateStr) {
+        renderReservations(dateStr);
+      }
+    });
+
+    const today = new Date().toISOString().split("T")[0];
+    renderReservations(today);
+  </script>
+</body>
+</html>

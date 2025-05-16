@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Vaccine Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body style="max-width: 100%; margin: 0 auto; padding: 20px; font-family: 'Urbanist', sans-serif; background: white;">
+
+  <!-- Back Button -->
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px;">
+    <a href="Health_Vaccine.html" style="text-decoration: none;">
+      <button style="background: none; border: none; cursor: pointer;">
+        <img src="Back.png" alt="Back" style="width: 24px; height: 24px;" />
+      </button>
+    </a>
+  </div>
+
+  <!-- Action Buttons -->
+  <div style="display: flex; justify-content: center; gap: 16px; margin-bottom: 24px;">
+    <button style="background-color: #E53935; color: #fff; padding: 10px 18px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">Delete</button>
+    <a href="Health_Vaccine_Detail.html" style="text-decoration: none;">
+      <button style="background-color: #1E88E5; color: #fff; padding: 10px 18px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">Save</button>
+    </a>
+  </div>
+
+  <!-- Editable Vaccine Information -->
+  <div style="background-color: #F9F9F9; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); font-size: 14px; line-height: 1.8; display: flex; flex-direction: column;">
+
+    <div style="margin-bottom: 14px; width: 100%;">
+      <label style="font-weight: 600;">Vaccine ID</label>
+      <input type="text" value="VC001" style="width: 100%; padding: 10px; margin-top: 4px; border: 1px solid #ccc; border-radius: 8px;" />
+    </div>
+
+    <div style="margin-bottom: 14px;">
+      <label style="font-weight: 600;">Vaccine Name</label>
+      <input type="text" value="Pfizer-BioNTech (Comirnaty)" style="width: 100%; padding: 10px; margin-top: 4px; border: 1px solid #ccc; border-radius: 8px;" />
+    </div>
+
+    <div style="margin-bottom: 14px;">
+      <label style="font-weight: 600;">Total Vaccine</label>
+      <input type="number" value="500" style="width: 100%; padding: 10px; margin-top: 4px; border: 1px solid #ccc; border-radius: 8px;" />
+    </div>
+
+    <div style="margin-bottom: 14px;">
+      <label style="font-weight: 600;">Total Slot Per Day</label>
+      <input type="number" value="30" style="width: 100%; padding: 10px; margin-top: 4px; border: 1px solid #ccc; border-radius: 8px;" />
+    </div>
+
+    <div style="margin-bottom: 14px;">
+      <label style="font-weight: 600;">Status</label> 
+      <select style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px;">
+        <option selected>Available</option>
+        <option>Unavailable</option>
+      </select>
+    </div>
+  </div>
+
+  <div style="height: 100px;"></div>
+
+ 
+
+</body>
+</html>
