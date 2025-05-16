@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Urbanist', sans-serif;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding-bottom: 90px; /* make space for nav bar */
+  height: 100vh;
+}
+
+.back-btn {
+  font-size: 24px;
+  background: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.save-btn {
+  margin-top: 8px;
+  width: 100%;
+  background-color: #1E88E5;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}

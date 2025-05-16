@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 375px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 30px;
+  margin-bottom: 120px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.back-btn {
+  font-size: 24px;
+  background: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  left: 0;
+}
+
+.header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #1c1c1c;
+}
+
+.card-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.card-form input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  outline: none;
+  height: 56px;
+}
+
+.card-form textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+}
+
+.half {
+  flex: 1;
+}
+
+.save-btn {
+  margin-top: 100px;
+  background-color: #1c1f26;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  padding: 16px;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 56px;
+  margin-bottom: 80px;
+}
+
+.save-btn:hover {
+  background-color: #0f1117;
+}

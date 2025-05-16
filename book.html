@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vaccine Appointment</title>
+   <link rel="stylesheet" href="book.css">
+   <style>
+     .hidden {
+       display: none;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="container">
+     <header>
+       <a href="home.html"><button class="back-btn"><</button></a>
+       <h1>Vaccine Appointment</h1>
+     </header>
+     <form>
+       <div class="form-group">
+         <label for="vaccine-type">Type of Vaccine</label>
+         <div class="custom-select">
+         <select id="vaccine-type" name="vaccine-type">
+           <option disabled selected>Select Vaccine</option>
+           <option>Covid-19 (Pfizer)</option>
+           <option>Influenza</option>
+           <option>Rabies</option>
+         </select>
+        </div>
+       </div>
+       <div class="form-group">
+         <label for="hospital">Hospital</label>
+         <div class="custom-select">
+         <select id="hospital" name="hospital">
+           <option disabled selected>Select Hospital</option>
+           <option>Hospital A</option>
+           <option>Hospital B</option>
+           <option>Hospital C</option>
+         </select>
+        </div>
+       </div>
+       <div class="form-group">
+         <label for="appointment-date">Date</label>
+         <input type="date" id="appointment-date" name="appointment-date">
+       </div>
+       <div class="form-group">
+         <label for="payment-method">Payment Method</label>
+         <div class="custom-select">
+         <select id="payment-method" name="payment-method">
+           <option disabled selected>Select Payment</option>
+           <option value="cash">Cash (Pay Up-front)</option>
+           <option value="credit">Credit Card</option>
+           <option value="qr">Qr Code</option>
+         </select>
+        </div>
+       </div>
+ 
+       <!-- Credit Card Dropdown (initially hidden) -->
+       <div class="form-group hidden" id="credit-card-options">
+         <label for="card-number">Select Credit Card</label>
+         <div class="custom-select">
+         <select id="card-number" name="card-number">
+           <option disabled selected>Select Card</option>
+           <option>xx90</option>
+           <option>xx82</option>
+           <option>xx43</option>
+         </select>
+        </div>
+       </div>
+ 
+       
+     </form>
+     <a href="result.html"><button class="confirm-button">Confirm</button></a>
+   </div>
+ 
+   <script>
+     const paymentMethod = document.getElementById('payment-method');
+     const creditCardOptions = document.getElementById('credit-card-options');
+ 
+     paymentMethod.addEventListener('change', function () {
+       if (this.value === 'credit') {
+         creditCardOptions.classList.remove('hidden');
+       } else {
+         creditCardOptions.classList.add('hidden');
+       }
+     });
+   </script>
+ </body>
+ </html>
+ 

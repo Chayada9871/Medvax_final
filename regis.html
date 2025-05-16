@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="regis.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-btn"><</a>
+      <h1>Hello! Register to get started</h1>
+
+      <form>
+        <div class="row">
+          <div class="field">
+            <label for="title">Title</label>
+            <select id="title">
+              <option>Select Title</option>
+              <option>Mr.</option>
+              <option>Mrs.</option>
+              <option>Ms.</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" />
+          </div>
+        </div>
+
+        <div class="long-field">
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" />
+        </div>
+
+        <div class="long-field">
+          <label for="weight">Weight</label>
+          <input type="text" id="weight" placeholder="(kg)" />
+        </div>
+
+        <div class="long-field">
+          <label for="height">Height</label>
+          <input type="text" id="height" placeholder="(cm)" />
+        </div>
+
+        <div class="row2">
+          <div class="field">
+            <label for="dob">Date of Birth</label>
+            <input type="text" id="dob" placeholder="dd/mm/yyyy" />
+          </div>
+          <div class="field">
+            <label>Sex</label>
+            <div class="radio-group">
+              <label><input type="radio" name="sex" value="male" /> Male</label>
+              <label
+                ><input type="radio" name="sex" value="female" /> Female</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="long-field">
+          <label for="id-number">ID number</label>
+          <input type="text" id="id-number" />
+        </div>
+
+        <div class="long-field">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" placeholder="xxx-xxx-xxx" />
+        </div>
+
+        <div class="long-field">
+          <label for="disease">Personal disease</label>
+          <input type="text" id="disease" />
+        </div>
+
+        <div class="long-field">
+          <label for="allergy">Allergic reaction</label>
+          <input type="text" id="allergy" />
+        </div>
+
+        <div class="long-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+      </form>
+      <div class="re-btn">
+        <a href="regis2.html"
+          ><button type="submit" class="submit-btn">Next</button></a
+        >
+      </div>
+      <p class="login-text">
+        Already have an account? <a href="login.html">Login Now</a>
+      </p>
+    </div>
+  </body>
+</html>

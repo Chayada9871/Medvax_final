@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family: 'Urbanist', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  padding: 0;
+  background-color: white;
+  color: #000;
+}
+
+.container {
+  padding: 24px;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.back-btn {
+  font-size: 24px;
+  background: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+
+.highlighted-title {
+  background-color: #b3d6f8;
+  color: #002d5b;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.info-list {
+  margin-bottom: 40px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.label {
+  font-weight: bold;
+  max-width: 45%;
+}
+
+.value {
+  text-align: right;
+  max-width: 50%;
+}
+
+.book-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 56px;
+}

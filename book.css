@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 60px;
+  padding: 0;
+  background-color: white;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* full height of the viewport */
+}
+
+
+.container {
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  justify-content: center;
+}
+
+.back-btn {
+  font-size: 24px;
+  background: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 5px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+select, input[type="date"] {
+  /* width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #f8f9fa; */
+  padding: 15px;
+  background-color: #f5f6f8;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  height: 56px;
+  border: none;
+}
+
+input[type="date"] {
+  width: 91.5%;
+  padding-top: 0;
+  padding-bottom: 0;
+  font: 'Urbanist';
+  border: 1px solid #E8ECF4;
+}
+
+
+.confirm-button {
+  width: 100%;
+  padding: 16px;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 56px;
+  margin-top: 100px;
+}
+
+.custom-select {
+  padding-right: 10px;
+  background-color: #f5f6f8;
+  border-radius: 10px;
+  border-color: #E8ECF4;
+  border: 1px solid #E8ECF4;
+  font-family: 'Urbanist';
+}

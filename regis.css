@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: #fff;
+  margin-top: 50px;
+  padding: 0;
+  color: #000;
+}
+
+.container {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-btn {
+  font-size: 24px;
+  background: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 5px 12px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  margin-left: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+}
+.long-field {
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+  width: 331px;
+}
+
+.long-field label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.field label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 12px;
+  border: 1px solid #e8ecf4;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f7f8f9;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+/* .row2 {
+  display: flex;
+  gap: 90px;
+} */
+
+/* .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 8px;
+} */
+
+.row2 {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.row2 .field {
+  width: 155px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+  flex-wrap: nowrap;
+}
+
+.radio-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.re-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 331px;
+}
+
+.login-text {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-text a {
+  color: #007bff;
+  text-decoration: none;
+}
